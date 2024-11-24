@@ -4,81 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chatbot</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f0f0f0;
-            margin: 0;
-            padding: 0;
-        }
-        .chatbox {
-            width: 400px;
-            height: 500px;
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-        }
-        .messages {
-            flex-grow: 1;
-            overflow-y: auto;
-            padding-right: 10px;
-            margin-bottom: 15px;
-        }
-        .message {
-            max-width: 70%;
-            padding: 10px;
-            border-radius: 5px;
-            margin-bottom: 10px;
-            font-size: 14px;
-            line-height: 1.4;
-        }
-        .user {
-            background-color: #e1f5fe;
-            margin-left: auto;
-            text-align: right;
-        }
-        .bot {
-            background-color: #f1f8e9;
-            margin-right: auto;
-            text-align: left;
-        }
-        .input-container {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-        #userMessage {
-            width: 100%;
-            padding: 10px;
-            border-radius: 20px;
-            border: 1px solid #ccc;
-            font-size: 14px;
-            outline: none;
-        }
-        #sendBtn {
-            padding: 10px 15px;
-            background-color: #007bff;
-            color: white;
-            border-radius: 20px;
-            border: none;
-            cursor: pointer;
-        }
-        #sendBtn:hover {
-            background-color: #0056b3;
-        }
-    </style>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}"> <!-- CSS dosyasını bağladık -->
 </head>
 <body>
 
-    <div class="chatbox">
+    <!-- Sohbet simgesi -->
+    <button id="openChatButton" onclick="toggleChat()">💬</button>
+
+    <!-- Sohbet kutusu -->
+    <div class="chatbox" id="chatbox">
         <div class="messages" id="messages">
-            <!-- Chat messages will appear here -->
+            <!-- Sohbet mesajları burada görünecek -->
         </div>
         <div class="input-container">
             <input type="text" id="userMessage" placeholder="Mesajınızı yazın..." />
@@ -86,45 +22,7 @@
         </div>
     </div>
 
-    <script>
-        function appendMessage(message, sender) {
-            var messageDiv = document.createElement('div');
-            messageDiv.classList.add('message');
-            messageDiv.classList.add(sender);
-            messageDiv.innerHTML = message;
-            document.getElementById('messages').appendChild(messageDiv);
-            document.getElementById('messages').scrollTop = document.getElementById('messages').scrollHeight;
-        }
-
-        function sendMessage() {
-            var message = document.getElementById('userMessage').value;
-            if (message.trim() === "") return;  // Boş mesaj gönderme
-            appendMessage(message, 'user');  // Kullanıcı mesajını ekle
-            document.getElementById('userMessage').value = '';  // Mesaj kutusunu temizle
-
-            fetch('/chatbot', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({ message: message })
-            })
-            .then(response => response.json())
-            .then(data => {
-                appendMessage(data.response, 'bot');  // Bot cevabını ekle
-            })
-            .catch(error => {
-                console.error('Hata:', error);
-            });
-        }
-
-        // Enter tuşuna basıldığında mesaj gönder
-        document.getElementById('userMessage').addEventListener('keypress', function (e) {
-            if (e.key === 'Enter') {
-                sendMessage();
-            }
-        });
-    </script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script> <!-- JavaScript dosyasını bağladık -->
 
 </body>
 </html>

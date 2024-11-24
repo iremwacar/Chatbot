@@ -1,0 +1,100 @@
+/* Genel stil ayarları */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Sohbet simgesi */
+#openChatButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    line-height: 60px;
+}
+
+#openChatButton:hover {
+    background-color: #0056b3;
+}
+
+/* Sohbet kutusu */
+.chatbox {
+    width: 400px;
+    height: 500px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 20px;
+    display: none; /* Başlangıçta gizli */
+    flex-direction: column;
+}
+
+.messages {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding-right: 10px;
+    margin-bottom: 15px;
+}
+
+.message {
+    max-width: 70%;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.user {
+    background-color: #e1f5fe;
+    margin-left: auto;
+    text-align: right;
+}
+
+.bot {
+    background-color: #f1f8e9;
+    margin-right: auto;
+    text-align: left;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#userMessage {
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    outline: none;
+}
+
+#sendBtn {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#sendBtn:hover {
+    background-color: #0056b3;
+}
