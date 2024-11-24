@@ -1,38 +1,50 @@
-{"intents":  [
-    {"tag": "selamlasma",
-    "patterns": ["merhaba","hey","selam","nasıl gidiyor?","nasılsın"],
-    "response": ["Merhaba!", "Selam!", "Nasılsın?"]
-    },
-    {"tag": "ayrılma",
-    "patterns": ["teşekkür ederim","daha sonra görüşürüz","görüşürüz","bay bay","görüşmek üzre","iyi günler"],
-    "response": ["Seni göremeyeceğim için üzgünüm!", "Daha sonra görüşürüz!", "İyi günler!"]
-    },
-    {"tag": "yaş",
-    "patterns": ["kaç yaşında","yaşı ne","yaşı kaç","yas?","yaş?","yaşı ne"],
-    "response": ["O 21 yaşında!", "21!", "İrem 21 yaşında!"]
-    },
-    {"tag": "isim",
-    "patterns": ["ismin ne?","adın ne","sana ne demeliyim","sen kimsin ?","sana nasıl seslenmeliyim"],
-    "response": ["Ben AIrem!", "Benim ismim AIrem!", "Ben İrem in chatbotu AIrem!"]
-    },
-    {"tag": "ürün",
-    "patterns": ["sen nesin","ne üretiyorsün","ne işe yariyorsun","ne yapıyorsun","neyle uğraşıyorsun","neyle ilgileniyorsun"],
-    "response": ["Ben Irem hakkında gelen soruları yanıtlamak için görevlendirdim, bu sorulara yanıt vermekteyim.", "Benim görevim Irem hakkında sorulara yanıt vermek!"]
-    },
-    {"tag": "ilgi",
-    "patterns": ["irem neyle ilgileniyor","ne okuyor","ne yapmayı sever","ilgi alanları ne"],
-    "response": ["O, bir yazılım mühendisi öğrencisi ve yapay zeka alanında kendini geliştiriyor.", "O, yazılım mühendisi öğrencisi ve yapay zeka alanında kendini geliştiriyor.", "O yazılım mühendisi öğrencisi ve yapay zeka alanında uzmanlaşmak itiyor."]
-    },
-    {"tag": "extra",
-    "patterns": ["başka","detay","bilgi","ekstra bilgi","daha fazla","daha detaylı anlat"],
-    "response": ["İrem, Celal Bayar Üniversitesi'nde yazılım mühendisliği öğrencisi olarak eğitimini sürdürüyor. Yapay zeka, veri bilimi, makine öğrenmesi , derin öğrenme gibi konulara hakim. Yapay zeka alanında kariyerine devam etmek istemekte, bunun için çeşitli projeler ve platformlarda yer almaktadır. Bende onun gerçekleştirdiği projelerden sadece biriyim."]
-    },
-    {"tag": "üniversite",
-    "patterns": ["nerede","hangi üniversite"],
-    "response": ["Manisa Celal BAyar Üniversitesinde Eğitim Görmektedir."]
-    },
-    {"tag": "dil",
-    "patterns": ["hangi dilleri biliyor","hangi dilllere hakim","hangi dillerde kod yazıyor","dil"],
-    "response": ["Başta phython ve kütüphaneleri olmak üzere python, c#, java, html, css, javascript, sql, php, c, c++, vb. dillerine hakimdir."]
-    }
-]}
+{
+    "intents": [
+      {
+        "tag": "selamlasma",
+        "patterns": ["merhaba", "hey", "selam", "nasil gidiyor?", "nasilsin"],
+        "response": ["Merhaba! Sana nasil yardimci olabilirim?", "Selam! Nasil yardimci olabilirim?"]
+      },
+      {
+        "tag": "ayrilma",
+        "patterns": ["tesekkur ederim", "daha sonra gorusuruz", "gorusuruz", "bay bay", "gorusemek uzre", "iyi gunler"],
+        "response": ["Seni goremeyecegim icin uzgunum!", "Daha sonra gorusuruz!", "Iyi gunler!"]
+      },
+      {
+        "tag": "yas",
+        "patterns": ["kac yasinda", "yasi ne", "yasi kac", "yas?", "yas?", "yasi ne"],
+        "response": ["O 21 yasinda!", "21!", "Irem 21 yasinda!"]
+      },
+      {
+        "tag": "isim",
+        "patterns": ["ismin ne?", "adin ne", "sana ne demeliyim", "sen kimsin?", "sana nasil seslenmeliyim"],
+        "response": ["Ben AIrem!", "Benim ismim AIrem!", "Ben Irem'in chatbotu AIrem!"]
+      },
+      {
+        "tag": "urun",
+        "patterns": ["sen nesin", "ne uretiyorsun", "ne ise yariyorsun", "ne yapiyorsun", "neyle ugrasyorsun", "neyle ilgileniyorsun"],
+        "response": ["Ben Irem hakkinda gelen sorulari yanitlamak icin gorevlendirildim, bu sorulara yanit vermekteyim.", "Benim gorevim Irem hakkinda sorulara yanit vermek!"]
+      },
+      {
+        "tag": "ilgi",
+        "patterns": ["irem neyle ilgileniyor", "ne okuyor", "ne yapmayi sever", "ilgi alanlari ne"],
+        "response": ["O, bir yazilim muhendisi ogrencisi ve yapay zeka alaninda kendini gelistiriyor.", "O, yazilim muhendisi ogrencisi ve yapay zeka alaninda kendini gelistiriyor.", "O yazilim muhendisi ogrencisi ve yapay zeka alaninda uzmanlasmak istiyor."]
+      },
+      {
+        "tag": "extra",
+        "patterns": ["baska", "detay", "bilgi", "ekstra bilgi", "daha fazla", "daha detayli anlat"],
+        "response": ["Irem, Celal Bayar Universitesinde yazilim muhendisligi ogrencisi olarak egitimini surduruyor. Yapay zeka, veri bilimi, makine ogrenmesi, derin ogrenme gibi konulara hakim. Yapay zeka alaninda kariyerine devam etmek istemekte, bunun icin cesitli projeler ve platformlarda yer almaktadir. Ben de onun gerceklestirdigi projelerden sadece biriyim."]
+      },
+      {
+        "tag": "universite",
+        "patterns": ["nerede okuyor", "hangi universite"],
+        "response": ["Manisa Celal Bayar Universitesinde egitim gormektedir."]
+      },
+      {
+        "tag": "dil",
+        "patterns": ["hangi dilleri biliyor", "hangi dillere hakim", "hangi dillerde kod yaziyor", "dil"],
+        "response": ["Basta Python ve kutuphaneleri olmak uzere Python, C#, Java, HTML, CSS, JavaScript, SQL, PHP, C, C++, VB. dillerine hakimdir."]
+      }
+    ]
+  }
+  
