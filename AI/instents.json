@@ -1,0 +1,38 @@
+{"intents":  [
+    {"tag": "selamlasma",
+    "patterns": ["merhaba","hey","selam","nasıl gidiyor?","nasılsın"],
+    "response": ["Merhaba!", "Selam!", "Nasılsın?"]
+    },
+    {"tag": "ayrılma",
+    "patterns": ["teşekkür ederim","daha sonra görüşürüz","görüşürüz","bay bay","görüşmek üzre","iyi günler"],
+    "response": ["Seni göremeyeceğim için üzgünüm!", "Daha sonra görüşürüz!", "İyi günler!"]
+    },
+    {"tag": "yaş",
+    "patterns": ["kaç yaşında","yaşı ne","yaşı kaç","yas?","yaş?","yaşı ne"],
+    "response": ["O 21 yaşında!", "21!", "İrem 21 yaşında!"]
+    },
+    {"tag": "isim",
+    "patterns": ["ismin ne?","adın ne","sana ne demeliyim","sen kimsin ?","sana nasıl seslenmeliyim"],
+    "response": ["Ben AIrem!", "Benim ismim AIrem!", "Ben İrem in chatbotu AIrem!"]
+    },
+    {"tag": "ürün",
+    "patterns": ["sen nesin","ne üretiyorsün","ne işe yariyorsun","ne yapıyorsun","neyle uğraşıyorsun","neyle ilgileniyorsun"],
+    "response": ["Ben Irem hakkında gelen soruları yanıtlamak için görevlendirdim, bu sorulara yanıt vermekteyim.", "Benim görevim Irem hakkında sorulara yanıt vermek!"]
+    },
+    {"tag": "ilgi",
+    "patterns": ["irem neyle ilgileniyor","ne okuyor","ne yapmayı sever","ilgi alanları ne"],
+    "response": ["O, bir yazılım mühendisi öğrencisi ve yapay zeka alanında kendini geliştiriyor.", "O, yazılım mühendisi öğrencisi ve yapay zeka alanında kendini geliştiriyor.", "O yazılım mühendisi öğrencisi ve yapay zeka alanında uzmanlaşmak itiyor."]
+    },
+    {"tag": "extra",
+    "patterns": ["başka","detay","bilgi","ekstra bilgi","daha fazla","daha detaylı anlat"],
+    "response": ["İrem, Celal Bayar Üniversitesi'nde yazılım mühendisliği öğrencisi olarak eğitimini sürdürüyor. Yapay zeka, veri bilimi, makine öğrenmesi , derin öğrenme gibi konulara hakim. Yapay zeka alanında kariyerine devam etmek istemekte, bunun için çeşitli projeler ve platformlarda yer almaktadır. Bende onun gerçekleştirdiği projelerden sadece biriyim."]
+    },
+    {"tag": "üniversite",
+    "patterns": ["nerede","hangi üniversite"],
+    "response": ["Manisa Celal BAyar Üniversitesinde Eğitim Görmektedir."]
+    },
+    {"tag": "dil",
+    "patterns": ["hangi dilleri biliyor","hangi dilllere hakim","hangi dillerde kod yazıyor","dil"],
+    "response": ["Başta phython ve kütüphaneleri olmak üzere python, c#, java, html, css, javascript, sql, php, c, c++, vb. dillerine hakimdir."]
+    }
+]}
